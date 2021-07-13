@@ -1,0 +1,21 @@
+{
+    "blend": {
+        "func": "add",
+        "srcrgb": "one",
+        "dstrgb": "zero"
+    },
+    "vertex": "overlay",
+    "fragment": "overlay",
+    "attributes": [ "Position" ],
+    "samplers": [
+        { "name": "DiffuseSampler" },
+        { "name": "AuxSampler"},
+        { "name": "TexSampler"}
+    ],
+    "uniforms": [
+        { "name": "ProjMat",     "type": "matrix4x4", "count": 16, "values": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ] },
+        { "name": "ScreenSize",  "type": "float",      "count": 2,  "values": [ 1920.0, 1080.0 ] },
+        { "name": "CharSize",    "type": "float",      "count": 2,  "values": [ 35.0, 49.0 ]     },
+        { "name": "Time",        "type": "float",      "count": 1,  "values": [ 1.0 ]            }
+    ]
+}

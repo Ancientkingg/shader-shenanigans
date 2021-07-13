@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/diamond_ore",
+  "textures": {
+    "all": "minecraft:block/iron_ore"
+  }
+}
