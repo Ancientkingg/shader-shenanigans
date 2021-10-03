@@ -38,7 +38,7 @@ mat4 rotate(float angle){
 void main() {
     float angle = GameTime*1500;
     mat4 M = rotate(angle) * ModelViewMat;
-    if (length(Position) > 950 || textureSize(Sampler0, 0) == ivec2(64)) M = ModelViewMat;
+    if (length(Position) > 900) M = ModelViewMat;
     gl_Position = ProjMat * M * vec4(Position, 1.0);
 
     vertexDistance = length((M * vec4(Position, 1.0)).xyz);
